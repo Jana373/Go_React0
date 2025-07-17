@@ -25,5 +25,5 @@ func main() {
 	http.Handle("/", fs)
 
 	http.HandleFunc("/api/quote", textHandler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe("0.0.0.0:8080", nil)
 }
